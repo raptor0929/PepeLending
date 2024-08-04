@@ -8,7 +8,7 @@ module.exports = {
     "./utils/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), nextui()],
   darkTheme: "dark",
   darkMode: ["selector", "[data-theme='dark']"],
   // DaisyUI theme colors
