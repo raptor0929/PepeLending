@@ -115,7 +115,7 @@ const page = () => {
                   />
                 </div>
               </div>
-              <div className="relative right-0 flex h-72 w-2/5 flex-col items-center justify-center gap-8 bg-information-active">
+              <div className="relative right-0 flex h-132 w-2/5 flex-col items-center justify-center gap-8 bg-information-active">
                 <div className="flex flex-col gap-1 text-center">
                   <p className="font-urbanist text-2xl text-white">Pago Final</p>
                   <p className="text-3xl font-bold text-white">$510</p>

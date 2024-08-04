@@ -10,8 +10,8 @@ import React from "react";
 function Navbar() {
   // const { address } = useAccount();
   return (
-    <div className="flex h-full items-center justify-between  font-urbanist text-black">
-      <div className="w-1/6 px-10 text-3xl">Welcome!</div>
+    <div className="flex h-full items-center justify-between text-black">
+      <div className="w-1/6 px-10 text-3xl text-urbanist">Welcome!</div>
       <div className="flex items-center justify-center gap-2 px-10">
         {/* <LanguageSwitcher /> */}
         {/* {!address && <BlackCreateWalletButton />} */}

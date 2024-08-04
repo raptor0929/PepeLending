@@ -9,9 +9,9 @@ function CreditScore() {
         <span className="text-3xl text-gray-500"> month</span>
       </div>
       <Score title="Normal" value={20} />
-      <span className=" text-center text-gray-500">
+      {/* <span className=" text-center text-gray-500">
         The score goes from 1 to 1000, the closer to 1000, the better financing opportunities you will have.
-      </span>
+      </span> */}
     </div>
   );
 }

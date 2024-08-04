@@ -7,7 +7,7 @@ type ISquarePosition = {
 };
 function SquarePosition({ title, description, subtitle }: ISquarePosition) {
   return (
-    <div className="flex w-full flex-col justify-center px-10 font-urbanist">
+    <div className="flex w-full flex-col justify-center px-10">
       <span className="text-2xl text-[#3268FF]">{title}</span>
       <span className="text-xl text-[#14BE77]">{description}</span>
       <span className="text-base text-gray-400">{subtitle}</span>

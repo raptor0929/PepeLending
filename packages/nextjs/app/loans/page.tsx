@@ -33,7 +33,7 @@ const page = () => {
     <SharedLayout>
       <div className="h-5/6 p-10 text-black">
         <div className="px-10 pb-12 pt-4">
-          <span className="font-urbanist text-4xl text-information">My loans</span>
+          <span className="text-4xl text-information">My loans</span>
         </div>
         {loansData.length === 0 ? (
           <div className="flex h-full w-full items-center justify-center bg-white py-16 ">

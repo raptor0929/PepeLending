@@ -75,7 +75,7 @@ function LoanRoute() {
   const gameState = 1;
   return (
     <div className="h-full bg-white p-10">
-      <h1 className="pb-2 font-urbanist text-3xl text-[#3268FF]">Start the route to request your loan!</h1>
+      <h1 className="pb-2 text-3xl text-[#3268FF]">Start the route to request your loan!</h1>
       <span className="text-gray-400">Completa estos 4 retos durante 4 semanas</span>
       <Table aria-label="Example static collection table" hideHeader removeWrapper className="mt-10">
         <TableHeader>
