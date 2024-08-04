@@ -23,7 +23,7 @@ const calculateMonthlyPayments = (finalAmount: number, duration: number): Paymen
 };
 
 const Page = () => {
-  const { isOpen, onClose } = useDisclosure();
+  const { isOpen, onClose, onOpen } = useDisclosure();
   const router = useRouter();
   const [amount, setAmount] = useState<number>(0);
   const [duration, setDuration] = useState<number>(1);
@@ -121,6 +121,10 @@ const Page = () => {
                 </ul>
               </div>
             </div>
+
+            <Button onClick={onOpen} color="primary" className="text-black w-1/5 py-4 mt-4" radius="full" size="lg">
+              Get
+            </Button>
             <Modal
               isOpen={isOpen}
               onClose={handleClose}

@@ -1,80 +1,46 @@
-# 🏗 Scaffold-ETH 2
+# Pepe Lending with L1SLOAD
 
-<h4 align="center">
-  <a href="https://docs.scaffoldeth.io">Documentation</a> |
-  <a href="https://scaffoldeth.io">Website</a>
-</h4>
+![Descripción de la imagen](./pepe.png)
 
-🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
+## Project Description
 
-⚙️ Built using NextJS, RainbowKit, Hardhat, Wagmi, Viem, and Typescript.
+**Pepe Lending** is a decentralized finance (DeFi) platform designed to provide microloans without the need for collateral. Think of it as a decentralized version of Mercado Pago, enabling users to request and offer small loans through smart contract technology. Our proposal eliminates the collateral requirement by leveraging blockchain technology, specifically using `L1SLOAD` from Scroll, ensuring a more accessible and scalable solution.
 
-- ✅ **Contract Hot Reload**: Your frontend auto-adapts to your smart contract as you edit it.
-- 🪝 **[Custom hooks](https://docs.scaffoldeth.io/hooks/)**: Collection of React hooks wrapper around [wagmi](https://wagmi.sh/) to simplify interactions with smart contracts with typescript autocompletion.
-- 🧱 [**Components**](https://docs.scaffoldeth.io/components/): Collection of common web3 components to quickly build your frontend.
-- 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
-- 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Ethereum network.
+### Key Features
 
-![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/b237af0c-5027-4849-a5c1-2e31495cccb1)
+1. **Decentralized Microloans**: Users can request and offer small loans without traditional intermediaries, making the process more inclusive.
+2. **Elimination of Collateral Requirement**: Utilizing `L1SLOAD` and blockchain technology, we remove the need for collateral, making microloans accessible to more people.
+3. **Qualification Criteria**: To qualify for a microloan without collateral, users must have repaid a $1000 loan at least one year prior. This criterion helps assess creditworthiness without traditional collateral.
+4. **Variable Interest Rates**: Interest rates are dynamically adjusted based on a mapping of loans conducted on Layer 1, reflecting the user’s loan history and repayment behavior.
 
-## Requirements
+![Descripción de la imagen](./L1SLOAD.JPG)
 
-Before you begin, you need to install the following tools:
+### Business Model
 
-- [Node (>= v18.17)](https://nodejs.org/en/download/)
-- Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
-- [Git](https://git-scm.com/downloads)
+- **How to Qualify for a Microloan Without Collateral**:
+  - Users must have completed the repayment of a $1000 loan at least one year ago to qualify for a new microloan without collateral.
+- **Variable Interest Rates**:
+  - Rates are determined based on a comprehensive mapping of previous loans on Layer 1, ensuring that rates are aligned with the user’s financial behavior.
 
-## Quickstart
+### System Architecture
 
-To get started with Scaffold-ETH 2, follow the steps below:
+1. **L1 Microloan Contract**:
 
-1. Install dependencies if it was skipped in CLI:
+   - **Data Storage**: Manages loan information, including requests and lender details.
+   - **Functions**: Allows users to request a loan, approve a loan, and check loan statuses.
 
-```
-cd my-dapp-example
-yarn install
-```
+2. **L2 Interaction Contract**:
+   - **Data Reading and Writing**: Uses `L1SLOAD` to interact with the L1 contract from Layer 2.
+   - **Integration with Scroll**: Integrates with Scroll to perform operations efficiently on Layer 2.
 
-2. Run a local network in the first terminal:
+### Usage
 
-```
-yarn chain
-```
+1. **Interact with the L1 Contract**
 
-This command starts a local Ethereum network using Hardhat. The network runs on your local machine and can be used for testing and development. You can customize the network configuration in `packages/hardhat/hardhat.config.ts`.
+   Use the provided interface in the L2 contract to request, approve, or repay loans.
 
-3. On a second terminal, deploy the test contract:
+2. **Check Loan Status**
 
-```
-yarn deploy
-```
+   Utilize the functions `requestLoan`, `approveLoan`, and `repayLoan` to interact with the Layer 1 contract.
 
-This command deploys a test smart contract to the local network. The contract is located in `packages/hardhat/contracts` and can be modified to suit your needs. The `yarn deploy` command uses the deploy script located in `packages/hardhat/deploy` to deploy the contract to the network. You can also customize the deploy script.
-
-4. On a third terminal, start your NextJS app:
-
-```
-yarn start
-```
-
-Visit your app on: `http://localhost:3000`. You can interact with your smart contract using the `Debug Contracts` page. You can tweak the app config in `packages/nextjs/scaffold.config.ts`.
-
-Run smart contract test with `yarn hardhat:test`
-
-- Edit your smart contract `YourContract.sol` in `packages/hardhat/contracts`
-- Edit your frontend homepage at `packages/nextjs/app/page.tsx`. For guidance on [routing](https://nextjs.org/docs/app/building-your-application/routing/defining-routes) and configuring [pages/layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts) checkout the Next.js documentation.
-- Edit your deployment scripts in `packages/hardhat/deploy`
-
-
-## Documentation
-
-Visit our [docs](https://docs.scaffoldeth.io) to learn how to start building with Scaffold-ETH 2.
-
-To know more about its features, check out our [website](https://scaffoldeth.io).
-
-## Contributing to Scaffold-ETH 2
-
-We welcome contributions to Scaffold-ETH 2!
-
-Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-ETH 2.
+![Descripción de la imagen](./pepeLogo.png)
