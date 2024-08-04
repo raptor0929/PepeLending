@@ -43,4 +43,10 @@
 
    Utilize the functions `requestLoan`, `approveLoan`, and `repayLoan` to interact with the Layer 1 contract.
 
+### Contract Addresses
+
+- **L1 DeFi Contract Address**: `0x2F9E82A0f7003D33A0534871b8d05FF5eB6ab2d9`
+- **L2 Loan Contract Address**: `0x2C715079c01F32595A4C97e88C1e376554C71366`
+- **USDC Contract Address**: `0x8590bD18FdB00F62c644c3a4288d1Dceb41eaE41`
+
 ![Descripción de la imagen](./pepeLogo.png)
