@@ -63,8 +63,8 @@ const challenges = [
   // },
   {
     number: "01",
-    title: "OBTÉN TU PRÉSTAMO",
-    subtitle: "Elige cuánto deseas que te prestemos y en cuanto tiempo.",
+    title: "GET YOUR LOAN",
+    subtitle: "Choose how much you want us to lend you and in how much time.",
     status: "no-done",
     link: "/dashboard/loan",
   },
@@ -76,7 +76,7 @@ function LoanRoute() {
   return (
     <div className="h-full bg-white p-10">
       <h1 className="pb-2 text-3xl text-[#3268FF]">Start the route to request your loan!</h1>
-      <span className="text-gray-400">Completa estos 4 retos durante 4 semanas</span>
+      {/* <span className="text-gray-400">Completa estos 4 retos durante 4 semanas</span> */}
       <Table aria-label="Example static collection table" hideHeader removeWrapper className="mt-10">
         <TableHeader>
           <TableColumn className="text-black">
@@ -136,7 +136,7 @@ function LoanRoute() {
                   <p className="text-sm font-bold">{challenge.title}</p>
                   <p className="text-xs text-gray-400">{challenge.subtitle}</p>
                 </TableCell>
-                <TableCell className="flex w-full items-center justify-center">
+                <TableCell className="w-full my-12 flex  items-center justify-center ">
                   {gameState > index + 1 ? (
                     <span className="text-center text-sm text-success">Sent and approved</span>
                   ) : gameState === index + 1 ? (
@@ -147,7 +147,7 @@ function LoanRoute() {
                         router.push(challenge.link);
                       }}
                     >
-                      {/* {gameState === 5 ? "Pedir prestamo" : "Empezar"} */}
+                      Apply for loan
                     </Button>
                   ) : (
                     <></>
