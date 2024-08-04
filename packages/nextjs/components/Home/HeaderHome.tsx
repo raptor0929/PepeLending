@@ -15,7 +15,7 @@ type ScrollComponentProps = {
 const HeaderHome: React.FC<ScrollComponentProps> = ({ scrollToSection, activeSection }) => {
   const { address } = useAccount();
   return (
-    <Navbar className="z-10 bg-background-1 py-14 px-20" maxWidth="2xl">
+    <Navbar className="z-10 bg-background-1 py-10 px-32" maxWidth="2xl">
       <NavbarContent className="w-full justify-between">
         <NavbarBrand>
           <Link color={activeSection === 0 ? undefined : "foreground"}>
@@ -23,18 +23,27 @@ const HeaderHome: React.FC<ScrollComponentProps> = ({ scrollToSection, activeSec
           </Link>
         </NavbarBrand>
         <div className="flex w-1/2 justify-center gap-6 lg:gap-20">
-          <NavbarItem className="text-2xl">
-            <Link color={activeSection === 0 ? undefined : "foreground"} onPress={() => scrollToSection(0)}>
+          <NavbarItem className="text-4xl font-bold text-orange-500">
+            <Link
+              className={activeSection === 0 ? "text-success" : "text-[#1744F9]"}
+              onPress={() => scrollToSection(0)}
+            >
               Home
             </Link>
           </NavbarItem>
-          <NavbarItem className="text-2xl">
-            <Link color={activeSection === 1 ? undefined : "foreground"} onPress={() => scrollToSection(1)}>
+          <NavbarItem className="text-4xl font-bold">
+            <Link
+              className={activeSection === 1 ? "text-success" : "text-[#1744F9]"}
+              onPress={() => scrollToSection(1)}
+            >
               How it works?
             </Link>
           </NavbarItem>
-          <NavbarItem className="text-2xl">
-            <Link color={activeSection === 2 ? undefined : "foreground"} onPress={() => scrollToSection(2)}>
+          <NavbarItem className="text-4xl font-bold">
+            <Link
+              className={activeSection === 2 ? "text-success" : "text-[#1744F9]"}
+              onPress={() => scrollToSection(2)}
+            >
               Learning
             </Link>
           </NavbarItem>
@@ -42,7 +51,7 @@ const HeaderHome: React.FC<ScrollComponentProps> = ({ scrollToSection, activeSec
         <div className="flex items-center gap-4">
           <NavbarItem>{/* <LanguageSwitcher /> */}</NavbarItem>
           {!address && <NavbarItem className="hidden lg:flex">{/* <BlackCreateWalletButton /> */}</NavbarItem>}
-          <NavbarItem className="hidden rounded-lg bg-information px-10 py-3 text-lg font-bold lg:flex">
+          <NavbarItem className="hidden rounded-lg text-lg font-bold lg:flex">
             {/* TODO: WALLET */}
             <RainbowKitCustomConnectButton />
             <FaucetButton />

@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const { nextui } = require('@nextui-org/react');
 
-module.exports = {
+const config =  {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -177,3 +177,5 @@ module.exports = {
     },
   },
 };
+
+export default config;

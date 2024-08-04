@@ -11,7 +11,7 @@ const HowItWorks: React.FC = () => {
         <div className="flex flex-wrap justify-around">
           <div className="mb-8 w-full px-4 md:mb-0 md:w-1/4">
             <Image
-              src="/images/home/wallet-bg-blue.svg"
+              src="/images/home/money-bg-blue.svg"
               alt="Hero Image"
               width={80}
               height={80}

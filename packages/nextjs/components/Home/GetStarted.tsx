@@ -9,11 +9,12 @@ const GetStarted: React.FC = () => {
   // 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
 
   return (
-    <section className="container mx-auto px-10 pt-28">
-      <div className="flex flex-wrap items-center justify-center">
+    <section className="bg-information mx-auto px-20 text-white pt-28">
+      {/* <section className="container mx-auto px-10 pt-28"> */}
+      <div className="container flex flex-wrap items-center justify-center">
         <div className="w-full  md:w-1/2">
-          <h2 className="mb-20 text-6xl font-medium text-black">How to start?</h2>
-          <p className="mb-8 w-3/4 text-lg text-gray-700">
+          <h2 className="mb-20 text-6xl font-medium text-white">How to start?</h2>
+          <p className="mb-8 w-3/4 text-lg text-white">
             To obtain a loan with us you must complete 4 challenges in 4 weeks. And if you are new, don t worry, we have
             totally free courses for you.
           </p>
@@ -45,7 +46,7 @@ const GetStarted: React.FC = () => {
               indicator={<Image src="/images/icons/array.svg" alt="array" width={80} height={80} />}
             >
               <div className="mx-5 -mt-3 mb-4">
-                <span className="pb-4 text-black">
+                <span className="pb-4 text-white">
                   Do you want to get a crypto loan? Don t know where to start? The first step is to create a wallet..
                 </span>
               </div>
@@ -58,7 +59,7 @@ const GetStarted: React.FC = () => {
               indicator={<Image src="/images/icons/array.svg" alt="array" width={80} height={80} />}
             >
               <div className="mx-5 -mt-3 mb-4">
-                <span className="pb-4 text-black">
+                <span className="pb-4 text-white">
                   Do you want to get a crypto loan? Don t know where to start? The first step is to create a wallet..
                 </span>
               </div>
@@ -71,7 +72,7 @@ const GetStarted: React.FC = () => {
               indicator={<Image src="/images/icons/array.svg" alt="array" width={80} height={80} />}
             >
               <div className="mx-5 -mt-3 mb-4">
-                <span className="pb-4 text-black">
+                <span className="pb-4 text-white">
                   Do you want to get a crypto loan? Don t know where to start? The first step is to create a wallet..
                 </span>
               </div>
@@ -84,7 +85,7 @@ const GetStarted: React.FC = () => {
               indicator={<Image src="/images/icons/array.svg" alt="array" width={80} height={80} />}
             >
               <div className="mx-5 -mt-3 mb-4">
-                <span className="pb-4 text-black">
+                <span className="pb-4 text-white">
                   Do you want to get a crypto loan? Don t know where to start? The first step is to create a wallet..
                 </span>
               </div>

@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import CalculateLoan from "./CalculateLoan";
-import FreeCourses from "./FreeCourses";
+// import CalculateLoan from "./CalculateLoan";
+// import FreeCourses from "./FreeCourses";
 import GetStarted from "./GetStarted";
 import HeaderHome from "./HeaderHome";
 import HeroSection from "./HeroSection";
@@ -46,10 +46,8 @@ const Home: React.FC = () => {
       <div ref={sectionRefs[4]}>
         <GetStarted />
       </div>
-      <CalculateLoan />
-      <div ref={sectionRefs[2]}>
-        <FreeCourses />
-      </div>
+      {/* <CalculateLoan /> */}
+      <div ref={sectionRefs[2]}>{/* <FreeCourses /> */}</div>
       {/* <InvestorInterest /> */}
     </>
   );

@@ -12,9 +12,9 @@ const HeroSection: React.FC = () => {
     router.push("/dashboard");
   };
   return (
-    <section className=" bg-information px-10 text-white">
+    <section className="bg-information px-10 text-white pt-10">
       <div className="container mx-auto flex flex-col items-center text-center md:flex-row md:text-left">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center mt-10">
           <p className="mb-6 text-sm">100% safe & reliable</p>
           <h1 className="mb-6 text-6xl font-medium">Get a loan while you are learning and playing.</h1>
           <Button onClick={handleStart} color="primary" className="text-black w-1/2 py-4" radius="full" size="lg">
