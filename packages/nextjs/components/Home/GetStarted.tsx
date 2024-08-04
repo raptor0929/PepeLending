@@ -26,7 +26,7 @@ const GetStarted: React.FC = () => {
             </div>
             <div className="z-20">
               <Image
-                src="/images/home/boy.png"
+                src="/images/home/pepe3.png"
                 alt="Hero Image"
                 width={300}
                 height={300}

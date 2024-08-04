@@ -36,7 +36,7 @@ const HeroSection: React.FC = () => {
           <iframe
             width="100%"
             height="400"
-            src="https://www.youtube.com/embed/8Vnm85GY8jg"
+            src="https://www.youtube.com/embed/b1k8RdF5u2g"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
