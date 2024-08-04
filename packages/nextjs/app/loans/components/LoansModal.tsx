@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Button, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader } from "@nextui-org/react";
+import { Button, Modal, ModalContent, ModalFooter, ModalHeader } from "@nextui-org/react";
 
 function LoansModal({ isOpen, onOpenChange }: any) {
   return (
@@ -15,16 +15,16 @@ function LoansModal({ isOpen, onOpenChange }: any) {
       <ModalContent>
         {onClose => (
           <>
-            <ModalHeader className="flex flex-col items-center gap-5 py-12">
+            <ModalHeader className="flex flex-col items-center gap-5 pt-12">
               <Image src="/images/check.svg" width={50} height={50} alt="check" />
-              <span className="text-3xl text-[#1744F9]">Pago realizado</span>
+              <span className="text-3xl text-[#1744F9]">Payment made</span>
             </ModalHeader>
-            <ModalBody className="px-20 ">
+            {/* <ModalBody className="px-20 ">
               <p className="text-center">Felicidades has pagado tu primera cuota de forma puntual quam.</p>
-            </ModalBody>
-            <ModalFooter className="flex justify-center py-12">
+            </ModalBody> */}
+            <ModalFooter className="flex justify-center pb-12">
               <Button color="primary" onPress={onClose} className="px-8 py-6 text-black" radius="full">
-                ACEPTAR
+                Accept
               </Button>
             </ModalFooter>
           </>
